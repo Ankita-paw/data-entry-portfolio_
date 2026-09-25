@@ -1,0 +1,8 @@
+Test Case ID,Module,Scenario,Precondition,Steps,Expected Result,Priority,Execution Result
+TC-001,Authentication,Valid user login,Registered test account exists,"Open login page; enter valid email and password; click Login","User is authenticated and reaches the expected dashboard",High,Not Executed
+TC-002,Authentication,Invalid password,Registered test account exists,"Enter valid email and invalid password; click Login","Clear validation/error message is displayed and access is denied",High,Not Executed
+TC-003,Navigation,Primary navigation links,User is on dashboard,"Open each primary navigation link","Correct destination loads without broken links",Medium,Not Executed
+TC-004,Forms,Required-field validation,Form page is available,"Submit form with required fields empty","Required-field messages appear and invalid submission is prevented",High,Not Executed
+TC-005,Responsive UI,Mobile-width layout,Responsive page is available,"Resize viewport to mobile width and inspect key screens","Content remains readable and controls remain usable without unintended overflow",Medium,Not Executed
+TC-006,Regression,Previously working login flow,Known-good build available,"Repeat critical login and navigation flows after a change","Existing functionality continues to work",High,Not Executed
+TC-007,Data Accuracy,Displayed record values,Test record exists,"Open record and compare displayed values with expected test data","Displayed values match the source/test data",High,Not Executed
